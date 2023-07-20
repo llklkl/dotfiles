@@ -1,0 +1,64 @@
+" 需要安装 AceJump, IdeaVim-EasyMotion, IdeaVim-Quickscope, IdeaVimExtension 插件
+Plug 'machakann/vim-highlightedyank'
+let g:highlightedyank_highlight_duration = "1000" " 复制时的高亮延迟
+Plug 'preservim/nerdtree'
+let g:NERDTreeAutoOpen = 0
+Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
+let g:EasyMotion_do_mapping = 0 " 禁用 easymotion 默认按键
+set quickscope
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+
+set noeb " 禁止响铃
+set vb t_vb= " 禁用闪屏
+set number
+set relativenumber
+set clipboard^=unnamed,unnamedplus " 使用系统剪切板
+set scrolloff=5
+set showmode
+" set hlsearch
+set incsearch
+set smartcase
+set ignorecase
+set tabstop=4
+set shiftwidth=4
+set smartindent
+set ideajoin
+
+" 按键映射
+let mapleader=" "
+
+" 映射 esc
+inoremap jk <Esc>
+
+" 快速跳转
+nnoremap <leader>j 5jzz
+nnoremap <leader>k 5kzz
+nnoremap <leader>gu <C-u>
+nnoremap <leader>gd <C-d>
+
+" 重定义 home 和 end
+nnoremap L $
+vnoremap L $
+vnoremap H ^
+nnoremap H ^
+
+" 关闭文件
+nnoremap <leader>q :q<cr>
+
+" easymotion
+nmap <leader>s <Plug>(easymotion-s)
+
+" ideavim 专用
+map <leader>gh <Action>(Back)
+map <leader>gl <Action>(Forward)
+map <leader>gi <Action>(GotoImplementation)
+
+map <leader>ta <Action>(Annotate)
+map <leader>td <Action>(QuickJavaDoc)
+
+map [[ <Action>(MethodUp)
+map ]] <Action>(MethodDown)
+
+set keep-english-in-normal-and-restore-in-insert
