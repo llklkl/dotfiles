@@ -6,8 +6,6 @@ let g:NERDTreeAutoOpen = 0
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 let g:EasyMotion_do_mapping = 0 " 禁用 easymotion 默认按键
-set quickscope
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 
 set noeb " 禁止响铃
@@ -25,6 +23,7 @@ set tabstop=4
 set shiftwidth=4
 set smartindent
 set ideajoin
+set idearefactormode=keep
 
 " 按键映射
 let mapleader=" "
