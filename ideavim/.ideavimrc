@@ -54,9 +54,9 @@ nmap <leader>s <Plug>(easymotion-s)
 map <leader>gh <Action>(Back)
 map <leader>gl <Action>(Forward)
 map <leader>gi <Action>(GotoImplementation)
+map gh <Action>(QuickJavaDoc) " 打开文档
 
 map <leader>ta <Action>(Annotate)
-map <leader>td <Action>(QuickJavaDoc)
 
 map [[ <Action>(MethodUp)
 map ]] <Action>(MethodDown)
