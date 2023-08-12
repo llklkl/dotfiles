@@ -44,6 +44,9 @@ vnoremap L $
 vnoremap H ^
 nnoremap H ^
 
+" redo
+nnoremap <leader>r <C-r>
+
 " 关闭文件
 nnoremap <leader>q :q<cr>
 
@@ -60,3 +63,4 @@ map <leader>ta <Action>(Annotate)
 
 map [[ <Action>(MethodUp)
 map ]] <Action>(MethodDown)
+
