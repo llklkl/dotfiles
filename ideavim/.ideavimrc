@@ -44,23 +44,34 @@ vnoremap L $
 vnoremap H ^
 nnoremap H ^
 
-" redo
-nnoremap <leader>r <C-r>
-
 " 关闭文件
 nnoremap <leader>q :q<cr>
+
+" 窗口管理
+nnoremap <leader>w <C-w>
 
 " easymotion
 nmap <leader>s <Plug>(easymotion-s)
 
 " ideavim 专用
-map <leader>gh <Action>(Back)
-map <leader>gl <Action>(Forward)
-map <leader>gi <Action>(GotoImplementation)
-map gh <Action>(QuickJavaDoc) " 打开文档
+map gh <Action>(Back)
+map gl <Action>(Forward)
+map gi <Action>(GotoImplementation)
+map gI <Action>(GotoSuperMethod)
+map gf <Action>(GotoFile)
+map <leader>gh <Action>(QuickJavaDoc) " 打开文档
 
-map <leader>ta <Action>(Annotate)
+" 打开git
+map ta <Action>(Annotate)
 
+" 文件视图
+map <leader>e <Action>(ActivateProjectToolWindow)
+map gf <Action>(SelectInProjectView)
+
+" 错误
+map ]e <Action>(GotoNextError)
+map [e <Action>(GotoPreviousError)
+
+" 快速移动到上/下一个方法
 map [[ <Action>(MethodUp)
 map ]] <Action>(MethodDown)
-
