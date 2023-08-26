@@ -8,7 +8,7 @@
     "vim.ignorecase": true,
     "vim.leader": "<space>",
     "vim.highlightedyank.enable": true,
-    "vim.highlightedyank.duration": 1000,
+    "vim.highlightedyank.duration": 700,
     "vim.easymotion": true,
     "vim.insertModeKeyBindingsNonRecursive": [
         {
@@ -18,6 +18,15 @@
             ],
             "after": [
                 "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "j"
             ]
         }
     ],
@@ -31,11 +40,20 @@
             ]
         },
         {
-            "before":[
+            "before": [
                 "H"
             ],
             "after": [
                 "^"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                ":q"
             ]
         },
         {
@@ -52,7 +70,6 @@
         },
         {
             "before": [
-                "<leader>",
                 "g",
                 "h"
             ],
@@ -62,12 +79,80 @@
         },
         {
             "before": [
-                "<leader>",
                 "g",
                 "l"
             ],
             "commands": [
                 "workbench.action.navigateForward"
+            ]
+        },
+        {
+            // 打开侧边栏，并移动焦点
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.action.focusSideBar"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "f"
+            ],
+            "commands": [
+                "workbench.files.action.showActiveFileInExplorer"
+            ]
+        },
+        {
+            // 显示文档
+            "before": [
+                "<leader>",
+                "g",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
+        {
+            // goto implementation
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.peekImplementation"
+            ]
+        },
+        {
+            // 下一个错误
+            "before": [
+                "]",
+                "e"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
+        },
+        {
+            // 上一个错误
+            "before": [
+                "[",
+                "e"
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "a"
+            ],
+            "commands": [
+                "gitlens.toggleFileBlame"
             ]
         }
     ],
@@ -81,7 +166,7 @@
             ]
         },
         {
-            "before":[
+            "before": [
                 "H"
             ],
             "after": [
@@ -90,5 +175,24 @@
         }
     ],
     "editor.lineNumbers": "relative",
-    "vim.foldfix": true
+    "vim.foldfix": true,
+    "editor.cursorSurroundingLines": 5,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.multiEscape",
+            "sequence": [
+                // 聚焦到第一组编辑器上
+                "workbench.action.focusFirstEditorGroup",
+                // 同时触发 vim 的 esc 效果，避免一些bug 发生
+                "extension.vim_escape",
+                // 可选：关闭搜索栏图标
+                "closeFindWidget",
+                // 可选：关闭智能提示栏，有些时候会用到。
+                "hideSuggestWidget",
+                // 可选：关闭编辑器的提示，有时候 vscode 会报错，然后右下角弹窗口出来
+                //      设定这个以后就可以用这个指令关闭了。
+                "notifications.clearAll"
+            ]
+        }
+    ]
 }
