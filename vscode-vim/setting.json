@@ -154,6 +154,26 @@
             "commands": [
                 "gitlens.toggleFileBlame"
             ]
+        },
+                {
+            // 代码重构
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            // 代码格式化
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
         }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
