@@ -59,6 +59,8 @@ map gi <Action>(GotoImplementation)
 map gI <Action>(GotoSuperMethod)
 map gf <Action>(GotoFile)
 map <leader>gh <Action>(QuickJavaDoc) " 打开文档
+map gr <Action>(RenameElement)
+map <leader>f <Action>(ReformatCode)
 
 " 打开git
 map ta <Action>(Annotate)
