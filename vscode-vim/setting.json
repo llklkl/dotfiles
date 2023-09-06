@@ -108,8 +108,7 @@
         {
             // 显示文档
             "before": [
-                "<leader>",
-                "g",
+                "t",
                 "h"
             ],
             "commands": [
