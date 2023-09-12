@@ -49,6 +49,9 @@ nnoremap <leader>q :q<cr>
 " 窗口管理
 nnoremap <leader>w <C-w>
 
+" 粘贴
+nnoremap <leader>p "0p
+
 " easymotion
 nmap <leader>s <Plug>(easymotion-s)
 
