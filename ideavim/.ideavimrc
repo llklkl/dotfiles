@@ -1,10 +1,12 @@
 Plug 'machakann/vim-highlightedyank'
-let g:highlightedyank_highlight_duration = "1000" " 复制时的高亮延迟
+" 复制时的高亮延迟
+let g:highlightedyank_highlight_duration = "1000"
 Plug 'preservim/nerdtree'
 let g:NERDTreeAutoOpen = 0
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
-let g:EasyMotion_do_mapping = 0 " 禁用 easymotion 默认按键
+" 禁用 easymotion 默认按键
+let g:EasyMotion_do_mapping = 0
 
 " 禁止响铃
 set noeb
