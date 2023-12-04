@@ -218,7 +218,6 @@
     ],
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
     "gitlens.statusBar.enabled": false,
     "gitlens.blame.format": "${date} ${author|15}",
     "gitlens.blame.dateFormat": "YYYY/MM/DD",
