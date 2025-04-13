@@ -61,7 +61,7 @@ local key_tables = {
 }
 
 return {
-	default_prog = { "C:/Program Files/Git/bin/bash.exe", "-i", "-l" },
+	-- default_prog = { "C:/Program Files/Git/bin/bash.exe", "-i", "-l" },
 
 	-- 禁用bell
 	audible_bell = "Disabled",
