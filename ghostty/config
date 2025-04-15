@@ -1,0 +1,9 @@
+title = Ghostty
+background-opacity = 0.97
+background-blur-radius = 6
+unfocused-split-opacity = 0.9
+copy-on-select = true
+window-height = 35
+window-width = 120
+theme = Everforest Dark - Hard
+font-family = Hack Nerd Font Mono
