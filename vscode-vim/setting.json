@@ -30,21 +30,22 @@
             ]
         }
     ],
-    "vim.normalModeKeyBindingsNonRecursive": [
+        "vim.normalModeKeyBindingsNonRecursive": [
         {
+            "after": [
+                "g",
+                "_"
+            ],
             "before": [
                 "L"
-            ],
-            "after": [
-                "$"
             ]
         },
         {
-            "before": [
-                "H"
-            ],
             "after": [
                 "^"
+            ],
+            "before": [
+                "H"
             ]
         },
         {
@@ -57,14 +58,14 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "s"
-            ],
             "after": [
                 "<leader>",
                 "<leader>",
                 "2",
+                "s"
+            ],
+            "before": [
+                "<leader>",
                 "s"
             ]
         },
@@ -102,8 +103,10 @@
                 "f"
             ],
             "commands": [
-                "workbench.files.action.showActiveFileInExplorer"
-            ]
+                "workbench.files.action.showActiveFileInExplorer",
+                "workbench.files.action.focusFilesExplorer"
+            ],
+            "silent": true
         },
         {
             // 显示文档
@@ -154,7 +157,7 @@
                 "gitlens.toggleFileBlame"
             ]
         },
-                {
+        {
             // 代码重构
             "before": [
                 "g",
@@ -172,6 +175,16 @@
             ],
             "commands": [
                 "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "o",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.openRecent"
             ]
         }
     ],
