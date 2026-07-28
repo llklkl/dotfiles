@@ -211,24 +211,6 @@
     "editor.lineNumbers": "relative",
     "vim.foldfix": true,
     "editor.cursorSurroundingLines": 5,
-    "multiCommand.commands": [
-        {
-            "command": "multiCommand.multiEscape",
-            "sequence": [
-                // 聚焦到第一组编辑器上
-                "workbench.action.focusFirstEditorGroup",
-                // 同时触发 vim 的 esc 效果，避免一些bug 发生
-                "extension.vim_escape",
-                // 可选：关闭搜索栏图标
-                "closeFindWidget",
-                // 可选：关闭智能提示栏，有些时候会用到。
-                "hideSuggestWidget",
-                // 可选：关闭编辑器的提示，有时候 vscode 会报错，然后右下角弹窗口出来
-                //      设定这个以后就可以用这个指令关闭了。
-                "notifications.clearAll"
-            ]
-        }
-    ],
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.statusBar.enabled": false,
