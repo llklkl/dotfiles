@@ -1,0 +1,68 @@
+// DMS Window Rules - Managed by DankMaterialShell
+// Do not edit manually - changes may be overwritten
+
+// @id=wr_1787281075621322137 @name=com.mitchellh.ghostty
+window-rule {
+    match app-id="^com.mitchellh.ghostty$"
+    open-maximized true
+}
+
+// @id=wr_1787283623010513353 @name=WPS协作
+window-rule {
+    match app-id="^WPS协作$" title="^图片.*$"
+    open-floating true
+}
+
+// @id=wr_1787296498826808963 @name=xiezuo
+window-rule {
+    match app-id="^xiezuo$" title="^WPS会议$"
+    open-maximized true
+}
+
+// @id=wr_1787300720170348860 @name=wechat
+window-rule {
+    match app-id="^wechat$" title="^图片和视频$"
+    open-floating true
+}
+
+// @id=wr_1787301962317651643 @name=xiezuo
+window-rule {
+    match app-id="^xiezuo$" title="^搜索$"
+    open-floating true
+}
+
+// @id=wr_1787305316947631732 @name=Chatgpt
+window-rule {
+    match app-id="^Chatgpt$"
+    open-maximized true
+}
+
+// @id=wr_1787305837584232470 @name=xiezuo
+window-rule {
+    match app-id="^xiezuo$"
+    open-maximized true
+}
+
+// @id=wr_1787553935366143057 @name=wechat
+window-rule {
+    match app-id="^wechat$"
+    open-maximized true
+}
+
+// @id=wr_1787559910577569063 @name=xiezuo
+window-rule {
+    match app-id="^xiezuo$" title="^WPS会议-视频$"
+    open-floating true
+}
+
+// @id=wr_1787560022794622213 @name=xiezuo
+window-rule {
+    match app-id="^xiezuo$" title="^WPS会议-工具栏$"
+    open-floating true
+}
+
+// @id=wr_1787627786143088712 @name=xiezuo
+window-rule {
+    match app-id="^xiezuo$" title="^聊天记录$"
+    open-floating true
+}

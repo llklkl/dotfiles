@@ -1,0 +1,5 @@
+// 解决闪烁问题
+window-rule {
+    match app-id=r#"^(wechat|Chatgpt|xiezuo|WPS协作)$"#
+    clip-to-geometry false
+}
